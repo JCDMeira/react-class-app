@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+<p align="center">
+  <image
+  src="https://img.shields.io/github/languages/count/JCDMeira/react-class-app"
+  />
+  <image
+  src="https://img.shields.io/github/languages/top/JCDMeira/react-class-app"
+  />
+  <image
+  src="https://img.shields.io/github/last-commit/JCDMeira/react-class-app"
+  />
+  <image
+  src="https://img.shields.io/github/watchers/JCDMeira/react-class-app?style=social"
+  />
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📋 Indíce
 
-## Available Scripts
+- [Proposta](#id01)
+  <!-- - [O desafio](#id01.1)
+    - [Requisitos não funcionais ](#id01.1.1)
+    - [Requisitos não obrigatórios](#id01.1.2) -->
+- [Screenshots](#id02)
+- [Links](#id03)
+  - [Recursos úteis](#id03.1)
+- [Feito com](#id04)
+  - [O que aprendi](#id04.1)
+- [Pré-requisitos](#id05)
+- [Procedimentos de instalação](#id06)
+- [Autor](#id07)
 
-In the project directory, you can run:
+# 🚀 Proposta <a name="id01"></a>
 
-### `npm start`
+Criar uma aplicação com React usando os componentes baseados em classes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ## :trophy: O desafio <a name="id01.1"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### :dart: Requisitos não funcionais <a name="id01.1.1"></a>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### :pushpin: Requisitos não obrigatórios <a name="id01.1.2"></a>-->
 
-### `npm run build`
+<!-- # :camera_flash: Screenshots <a name="id02"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :iphone: Mobile design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p  align="center">
+  <img width="300px" src="./presentation/mobile.png" align="center"></img>
+</p>
 
-### `npm run eject`
+## :iphone: Tablets design
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p  align="center"><img width="420px"  src="./presentation/i-pad.png" align="center"></img></p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :desktop_computer: Desktop design
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p  align="center"><img width="720px" src="./presentation/desktop.png" align="center"></img></p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## :chart_with_upwards_trend: result of my work
 
-## Learn More
+<p  align="center"><img width="1080px" src="./presentation/myWork.gif" align="center"></img></p>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br /> -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# :heavy_check_mark: Links <a name="id03"></a>
 
-### Code Splitting
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Insomnia for development: [Insomnia](https://insomnia.rest/download)
 
-### Analyzing the Bundle Size
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Recursos úteis <a name="id03.1"></a>
 
-### Making a Progressive Web App
+- [Tutorial de react](https://pt-br.reactjs.org/tutorial/tutorial.html)
+- [Conversor de unidades CSS - px para VH/VW/REM](https://it-news.pw/pxtovh/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# 🛠 Feito com <a name="id04"></a>
 
-### Advanced Configuration
+- [React](https://reactjs.org/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## O que eu aprendi <a name="id04.1"></a>
 
-### Deployment
+# ☑️ Pré-requisitos <a name="id05"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br />
 
-### `npm run build` fails to minify
+- [x] Editor de código de sua preferência (recomendado VS code)
+- [x] Git
+- [x] Gerenciador de pacotes Yarn ou NPM
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br />
+
+# 📝 Procedimentos de instalação <a name="id06"></a>
+
+<br />
+
+Clone este repositório usando o comando:
+
+```bash
+git clone https://github.com/JCDMeira/react-class-app.git
+```
+
+Na pasta do projeto instale as dependências com uso do npm ou yarn
+
+```bash
+npm install
+
+ou
+
+yarn install
+```
+
+Para iniciar o servidor é só usar o comando
+
+```
+yarn start
+
+ou
+
+npm start
+
+```
+
+<br />
+
+# :sunglasses: Autor <a name="id07"></a>
+
+<br />
+
+- Personal Page - [Jean Carlos De Meira](https://jcdmeira.github.io)
+- Instagram - [@jean.meira10](https://www.instagram.com/jean.meira10/)
+- GitHub - [JCDMeira](https://github.com/JCDMeira)
