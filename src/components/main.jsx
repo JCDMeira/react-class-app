@@ -4,9 +4,13 @@ import './main.css';
 // form
 import { FaPlus } from 'react-icons/fa';
 
+//tarefas
+import { FaEdit, FaWindowClose } from 'react-icons/fa';
+
 export default class Main extends Component {
   state = {
     novaTarefa: '',
+    tarefas: ['Fazer café', 'Beber água', 'Estudar'],
   };
 
   handleChange = (e) => {
@@ -42,7 +46,7 @@ export default class Main extends Component {
   // Para devolverem os elementos xml, ou seja, renderizar algo
 
   render() {
-    const { novaTarefa } = this.state;
+    const { novaTarefa, tarefas } = this.state;
     return (
       <div className="main">
         {/* <h1>Meu componente de classe com estado</h1> */}
@@ -54,6 +58,18 @@ export default class Main extends Component {
             <FaPlus />
           </button>
         </form>
+
+        <ul className="tarefas">
+          {tarefas.map((tarefa, index) => (
+            <li key={index}>
+              {tarefa}
+              <div>
+                <FaEdit className="edit" />
+                <FaWindowClose className="delete" />
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     );
   }
