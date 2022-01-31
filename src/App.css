@@ -1,6 +1,7 @@
 :root {
   --primary-color: #0a4f70;
   --neutral-color: #fff;
+  --contrast-color: #f04c64;
 }
 
 * {

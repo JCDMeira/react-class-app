@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './main.css';
 
+// form
+import { FaPlus } from 'react-icons/fa';
+
 export default class Main extends Component {
   state = {
     novaTarefa: '',
@@ -45,9 +48,11 @@ export default class Main extends Component {
         {/* <h1>Meu componente de classe com estado</h1> */}
         <h1>Lista de tarefas</h1>
 
-        <form action="#">
+        <form action="#" className="form">
           <input onChange={this.handleChange} type="text" />
-          <button type="submit">Enviar</button>
+          <button type="submit" value={novaTarefa}>
+            <FaPlus />
+          </button>
         </form>
       </div>
     );
