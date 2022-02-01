@@ -70,3 +70,8 @@
 .tarefas li:hover .edit {
   color: var(--neutral-color);
 }
+
+.tarefas li span {
+  display: flex;
+  align-items: center;
+}

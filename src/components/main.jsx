@@ -63,10 +63,10 @@ export default class Main extends Component {
           {tarefas.map((tarefa, index) => (
             <li key={index}>
               {tarefa}
-              <div>
+              <span>
                 <FaEdit className="edit" />
                 <FaWindowClose className="delete" />
-              </div>
+              </span>
             </li>
           ))}
         </ul>
