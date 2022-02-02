@@ -11,7 +11,16 @@ export default class Main extends Component {
   state = {
     novaTarefa: '',
     tarefas: [],
+    isEdit: -1,
   };
+  // @ muda nome da página
+  // @ com classes
+  // ? componentDidMount() {
+  // ?   document.title = `nome da página`;
+  // ? }
+  // @ com hooks
+  // ? import useDocumentTitle from '@rehooks/document-title';
+  // ?  useDocumentTitle(`nome da página`);
 
   handleChange = (e) => {
     this.setState({
@@ -21,22 +30,42 @@ export default class Main extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    const { novaTarefa, tarefas } = this.state;
+    const { novaTarefa, tarefas, isEdit } = this.state;
 
     const novaTarefaTratada = novaTarefa.trim();
 
-    if (tarefas.indexOf(novaTarefaTratada) !== -1) {
+    if (tarefas.indexOf(novaTarefaTratada) !== -1 && isEdit === -1) {
       alert('tarefa já existe');
       return;
     }
 
+    if (isEdit === -1) {
+      this.setState({
+        novaTarefa: '',
+        tarefas: [...tarefas, novaTarefaTratada],
+        isEdit: -1,
+      });
+    } else {
+      const novasTarefasEditada = [...tarefas];
+      novasTarefasEditada[isEdit] = novaTarefa;
+
+      this.setState({
+        tarefas: [...novasTarefasEditada],
+        novaTarefa: '',
+        isEdit: -1,
+      });
+    }
+  };
+
+  handleEdit = (e, index) => {
+    const { tarefas } = this.state;
+
     this.setState({
-      novaTarefa: '',
-      tarefas: [...tarefas, novaTarefa],
+      isEdit: index,
+      novaTarefa: tarefas[index],
     });
   };
 
-  handleEdit = (e, index) => {};
   handleDelete = (e, index) => {
     const { tarefas } = this.state;
     const novasTarefas = [...tarefas];
