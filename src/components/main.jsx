@@ -31,7 +31,20 @@ export default class Main extends Component {
     }
 
     this.setState({
+      novaTarefa: '',
       tarefas: [...tarefas, novaTarefa],
+    });
+  };
+
+  handleEdit = (e, index) => {};
+  handleDelete = (e, index) => {
+    const { tarefas } = this.state;
+    const novasTarefas = [...tarefas];
+
+    novasTarefas.splice(index, 1);
+
+    this.setState({
+      tarefas: [...novasTarefas],
     });
   };
 
@@ -63,13 +76,15 @@ export default class Main extends Component {
 
   render() {
     const { novaTarefa, tarefas } = this.state;
+    console.log(this.state);
+
     return (
       <div className="main">
         {/* <h1>Meu componente de classe com estado</h1> */}
         <h1>Lista de tarefas</h1>
 
         <form action="#" className="form" onSubmit={this.handleSubmit}>
-          <input onChange={this.handleChange} type="text" />
+          <input onChange={this.handleChange} type="text" value={novaTarefa} />
           <button type="submit" value={novaTarefa}>
             <FaPlus />
           </button>
@@ -80,8 +95,14 @@ export default class Main extends Component {
             <li key={index}>
               {tarefa}
               <span>
-                <FaEdit className="edit" />
-                <FaWindowClose className="delete" />
+                <FaEdit
+                  className="edit"
+                  onClick={(e) => this.handleEdit(e, index)}
+                />
+                <FaWindowClose
+                  className="delete"
+                  onClick={(e) => this.handleDelete(e, index)}
+                />
               </span>
             </li>
           ))}
