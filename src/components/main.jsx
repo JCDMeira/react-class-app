@@ -22,6 +22,22 @@ export default class Main extends Component {
   // ? import useDocumentTitle from '@rehooks/document-title';
   // ?  useDocumentTitle(`nome da página`);
 
+  componentDidMount() {
+    const tarefas = JSON.parse(localStorage.getItem('tarefas'));
+
+    if (!tarefas) return;
+
+    this.setState({ tarefas });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { tarefas } = this.state;
+
+    if (tarefas === prevState.tarefas) return;
+
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+  }
+
   handleChange = (e) => {
     this.setState({
       novaTarefa: e.target.value,
@@ -105,7 +121,6 @@ export default class Main extends Component {
 
   render() {
     const { novaTarefa, tarefas } = this.state;
-    console.log(this.state);
 
     return (
       <div className="main">
