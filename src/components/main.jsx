@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './main.css';
 
-// form
-import { FaPlus } from 'react-icons/fa';
+import Form from './Form';
 
 //tarefas
 import { FaEdit, FaWindowClose } from 'react-icons/fa';
@@ -49,6 +48,8 @@ export default class Main extends Component {
     const { novaTarefa, tarefas, isEdit } = this.state;
 
     const novaTarefaTratada = novaTarefa.trim();
+
+    if (novaTarefa === '') return;
 
     if (tarefas.indexOf(novaTarefaTratada) !== -1 && isEdit === -1) {
       alert('tarefa já existe');
@@ -127,13 +128,11 @@ export default class Main extends Component {
         {/* <h1>Meu componente de classe com estado</h1> */}
         <h1>Lista de tarefas</h1>
 
-        <form action="#" className="form" onSubmit={this.handleSubmit}>
-          <input onChange={this.handleChange} type="text" value={novaTarefa} />
-          <button type="submit" value={novaTarefa}>
-            <FaPlus />
-          </button>
-        </form>
-
+        <Form
+          handleSubmit={this.handleSubmit}
+          handleChange={this.handleChange}
+          novaTarefa={novaTarefa}
+        />
         <ul className="tarefas">
           {tarefas.map((tarefa, index) => (
             <li key={index}>
