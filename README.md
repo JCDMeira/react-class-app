@@ -75,6 +75,10 @@ Criar uma aplicação com React usando os componentes baseados em classes.
 
 - [Tutorial de react](https://pt-br.reactjs.org/tutorial/tutorial.html)
 - [Conversor de unidades CSS - px para VH/VW/REM](https://it-news.pw/pxtovh/)
+- [React hooks: o que é, porque usar e exemplos!](https://blog.betrybe.com/tecnologia/react-hooks/#2)
+- [Componentes React: componentes de classe e funcional sem estado](https://blog.geekhunter.com.br/criando-componentes-react-componentes-de-classe-e-funcional-sem-estado/)
+- [React.Component](https://pt-br.reactjs.org/docs/react-component.html)
+- [O lado feio do React Hooks](https://oieduardorabelo.medium.com/o-lado-feio-do-react-hooks-c988524352d3)
 
 # 🛠 Feito com <a name="id04"></a>
 
