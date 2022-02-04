@@ -2,6 +2,7 @@
   background: var(--neutral-color);
   padding: 30px;
   margin: 50px auto;
+  width: 80%;
   max-width: 500px;
   border-radius: 4px;
   box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
