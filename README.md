@@ -39,7 +39,7 @@ Criar uma aplicação com React usando os componentes baseados em classes.
 
 ### :pushpin: Requisitos não obrigatórios <a name="id01.1.2"></a>-->
 
-# :camera_flash: Screenshots <a name="id02"></a>
+<!-- # :camera_flash: Screenshots <a name="id02"></a>
 
 <br />
 
@@ -51,7 +51,7 @@ Criar uma aplicação com React usando os componentes baseados em classes.
 
 ## :iphone: Tablets design
 
-<p  align="center"><img width="420px"  src="./presentation/ipad.png" align="center"></img></p>
+<p  align="center"><img width="420px"  src="./presentation/i-pad.png" align="center"></img></p>
 
 ## :desktop_computer: Desktop design
 
@@ -61,7 +61,7 @@ Criar uma aplicação com React usando os componentes baseados em classes.
 
 <p  align="center"><img width="1080px" src="./presentation/myWork.gif" align="center"></img></p>
 
-<br />
+<br /> -->
 
 # :heavy_check_mark: Links <a name="id03"></a>
 
