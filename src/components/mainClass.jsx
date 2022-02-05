@@ -4,7 +4,7 @@ import './main.css';
 import Form from './Form';
 import Tarefas from './Tarefas';
 
-export default class Main extends Component {
+export default class MainClass extends Component {
   state = {
     novaTarefa: '',
     tarefas: [],
