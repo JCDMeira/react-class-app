@@ -1,3 +1,6 @@
+//  usa classes como componentes com estado e funções como sem.
+//  representando versões anteriores ao react 16.8
+
 import React, { Component } from 'react';
 import './main.css';
 
